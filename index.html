@@ -43,8 +43,6 @@
             background-color: transparent;
         }
 
-
-
         /* Card styling */
         .card {
             background-color: #2a4a6b;
@@ -186,25 +184,27 @@
     </div>
 
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-	createChat({
-		webhookUrl: 'https://n8n.reautlandai.xyz/webhook/d5495aff-e025-438e-872f-626ca07dc9fe/chat',
-		
-		initialMessages: [
-		'Hi there!',
-		'Welcome to Boulder Brighton! How can I assist you today?'
-	],
-		i18n: {
-		en: {
-			title: '24/7 Live Chat Service',
-			subtitle: "Reautland AI. 2025",
-			footer: '',
-			getStarted: 'New Conversation',
-			inputPlaceholder: 'Type your query...',
-		},
-	});
-</script>
+        createChat({
+            webhookUrl: 'https://n8n.reautlandai.xyz/webhook/d5495aff-e025-438e-872f-626ca07dc9fe/chat',
+            
+            initialMessages: [
+                'Hi there!',
+                'Welcome to Boulder Brighton! How can I assist you today?'
+            ],
+            
+            i18n: {
+                en: {
+                    title: '24/7 Live Chat Service',
+                    subtitle: "Reautland AI. 2025",
+                    footer: '',
+                    getStarted: 'New Conversation',
+                    inputPlaceholder: 'Type your query...',
+                }
+            }
+        });
+    </script>
 </body>
 </html>
